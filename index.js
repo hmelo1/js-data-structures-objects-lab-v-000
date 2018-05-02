@@ -18,7 +18,12 @@ function deleteFromDriverByKey(driver, key){
   return newDriver;
 }
 
-function deleteFromDriverByKey(driver, key){
+function function deleteFromDriverByKey(driver, key){
+  const newDriver = {...driver};
+  delete newDriver[key];
+  return newDriver;
+}
+{
   delete Driver[key];
   return Driver;
 }
